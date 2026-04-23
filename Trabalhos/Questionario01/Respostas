@@ -1,1 +1,72 @@
+Exercício 1 — Pergunta conceitual
+Explique com suas palavras o que é Internet das Coisas (IoT) e cite um exemplo do cotidiano.
+
+A IoT (Internet das Coisas), consiste na rede de aparelhos físicos que conectam-se à internet através de softwares.
+O sistema da IoT, engloba sensores, automação de produtos físicos, veículos e demais funcionalidades proporcionadas fisicamente através desta conexão.
+Um exemplo cotidiano da IoT em nossas vidas é, por exemplo, o sistema de rádio de um carro. Onde há um software que conecta-o à rede de transmissão.
+Sendo assim, o rádio de um carro; que pode ser usado diariamente, também usufrui do sistema da Internet das Coisas (IoT).
+Ademais, outros exemplos comuns como: computadores, sensores, portões elétricos e demais aparelhos físicos com sistemas conectados por software, também estão presentes no cotidiano moderno.
+
+Exercício 2 — Pergunta de aplicação
+Descreva como um sistema embarcado poderia ser usado para automatizar a iluminação de uma casa.
+
+Com a utilização de softwares no sistema IoT, seria capaz de que a iluminação de uma casa fosse implementada a sensores de movimento e/ou aproximação.
+Sendo assim, resultando num sistema conectado à rede através do software que seja capaz de identificar a aproximação de pessoas. 
+Automatizando o sistema de iluminação da casa através da IoT (Internet das Coisas) comportada através dos Sistemas Embarcados.
+Também, se preciso, operações intercaladas entre os comandos de ligar e desligar poderiam apresentar demais avanços; conforme a programação realizada ao software.
+Fora isso, a automatização deixaria o sistema de iluminação mais prático e ágil, podendo ser operado à distância e facilitando o cotidiano aos seus responsáveis.
+
+Exercício 3:
+
+No circuito com um LED, o microcontrolador envia sinais HIGH e LOW alternadamente para acender e apagar o LED, controlando o tempo entre os estados com o comando delay; aumentando o tempo de delay, o LED permanece aceso ou apagado por mais tempo, tornando o piscar mais lento, enquanto diminuindo o delay, o LED pisca rapidamente, criando efeitos visuais diferentes e permitindo observar claramente a influência do tempo na saída digital.  
+Testar diferentes tempos de delay ajuda a compreender como o microcontrolador controla a saída do LED de forma precisa e como pequenas alterações no software geram resultados imediatos no comportamento do circuito.  
+O experimento permite explorar conceitos de temporização e ritmo em sistemas embarcados, mostrando a relação entre programação, hardware e percepção visual.  
+Alterações no delay demonstram de forma prática como a programação influencia o comportamento físico dos atuadores, reforçando o aprendizado sobre entradas e saídas digitais.  
+Esse exercício evidencia a importância de ajustar parâmetros de temporização para controlar sistemas automatizados de forma eficiente, tornando a prática mais didática e intuitiva para quem aprende eletrônica.
+
+4. Quais são as vantagens e desvantagens do uso de hardware open source em projetos de IoT?
+Vantagens: O Hardware open source geralmente tem um custo menor, porque não há custos de licença e há muitas alternativas compatíveis no mercado. Nele pode-se modificar tanto o 
+hardware quanto o software para atender necessidades específicas, e isso é otimo para prototipagem e projetos sob medida.
+Desvantagens: Hardware open source nem sempre vem com certificações, o que pode dificultar a comercialização. Por ser aberto, vulnerabilidades podem ser mais 
+visíveis — e nem sempre há atualizações rápidas ou suporte estruturado para corrigir falhas.
+
+5.O microcontrolador é o “cérebro” de um sistema embarcado, executando o programa que controla todo o funcionamento do dispositivo de forma automática e confiável.  
+Ele processa dados de sensores em tempo real e toma decisões para acionar atuadores como motores, LEDs e relés conforme a lógica programada.  
+Também gerencia a comunicação com outros dispositivos por protocolos como UART, SPI e I2C, garantindo integração eficiente.  
+Sensores fornecem informações, atuadores realizam ações e o microcontrolador coordena tudo, permitindo adaptação às condições externas.  
+Em resumo, ele combina processamento, controle e comunicação, formando a base de qualquer sistema embarcado moderno e autônomo.
+
+6. Projeto: Sistema de irrigação automática para pequenas plantas.  
+Problema: muitas plantas morrem por falta ou excesso de água, exigindo monitoramento constante.  
+Solução: usar um sensor de umidade do solo conectado a um microcontrolador, que lê o nível de água na terra em tempo real.  
+Quando a umidade estiver baixa, o microcontrolador aciona um atuador, como uma bomba ou válvula, para irrigar a planta automaticamente.  
+O sistema mantém a umidade ideal, economiza água e evita que as plantas sofram danos por rega incorreta, tornando o cuidado mais eficiente e prático.
+
+7. O circuito consiste em um LED conectado a um resistor e a um pino digital do microcontrolador, e um botão conectado a outro pino digital. 
+O programa lê continuamente o estado do botão: se o botão estiver pressionado (HIGH), o microcontrolador envia HIGH para o LED, acendendo-o.  
+Se o botão não estiver pressionado (LOW), o LED recebe LOW, permanecendo apagado.  
+O LED acende apenas enquanto o botão estiver pressionado, apagando imediatamente quando o botão é solto.  
+Esse funcionamento demonstra como entradas digitais podem controlar saídas digitais de forma simples e direta.
+
+8. O movimento maker incentiva o aprendizado ativo, permitindo que estudantes criem projetos práticos em vez de apenas estudar teoria.  
+Ele promove o desenvolvimento de habilidades em eletrônica, programação, robótica e design, integrando conhecimento de várias áreas.  
+Estimula a criatividade e a resolução de problemas, já que os participantes precisam projetar, testar e ajustar suas criações.  
+Ao trabalhar com protótipos físicos e ferramentas digitais, os aprendizes ganham experiência prática que facilita a compreensão de conceitos complexos.  
+Além disso, fortalece o trabalho colaborativo e a cultura de compartilhamento, elementos essenciais para inovação tecnológica.
+
+Exercício 9:
+
+sensores e atuadores em irrigação automatizada: O sensor de umidade do solo mede continuamente a quantidade de água presente na terra e envia os dados ao microcontrolador que processa as informações, compara com o nível ideal de umidade definido no programa e decide quando acionar a irrigação; ao detectar solo seco, o microcontrolador envia sinal ao atuador, como uma bomba ou válvula, que libera água automaticamente, garantindo que o solo permaneça na umidade adequada para o crescimento das plantas e evitando desperdício de água.  
+O sistema funciona de forma autônoma e em tempo real, mostrando como sensores fornecem informações precisas e atuadores realizam ações físicas conforme a lógica do microcontrolador, permitindo eficiência, economia e manutenção da saúde das plantas sem intervenção humana.  
+Sensores e atuadores trabalham em conjunto, onde o sensor coleta dados do ambiente e o atuador responde fisicamente, transformando a informação em ação prática, demonstrando a integração entre hardware e software em sistemas embarcados.  
+O microcontrolador atua como cérebro, interpretando os sinais do sensor e decidindo quando ligar ou desligar a irrigação, permitindo que o sistema seja totalmente automatizado e confiável.  
+Esse tipo de projeto evidencia como a automação aplicada à agricultura ou jardins melhora a produtividade, reduz desperdícios e facilita o manejo de plantas, tornando o aprendizado em tecnologia mais concreto e aplicável.  
+
+Exercício 10:
+
+Modificação de projeto: No projeto de irrigação automatizado, alterei o tempo de acionamento da bomba, aumentando a duração do fluxo de água; como resultado, o solo permaneceu mais úmido por mais tempo, enquanto reduzir o tempo faria o solo secar mais rápido, mostrando como ajustes simples de parâmetros influenciam diretamente o comportamento do sistema e a distribuição de água para as plantas.  
+Essa mudança permite calibrar o sistema para diferentes tipos de plantas ou condições do solo, demonstrando a importância de testar e ajustar valores como tempo de irrigação, sensibilidade do sensor ou limites programados.  
+Alterar parâmetros no código ou nas configurações do sensor afeta a resposta do atuador, evidenciando a relação entre programação, leitura de sensores e ação física, essencial para o desempenho correto do sistema.  
+Testes práticos com essas modificações mostram como pequenas mudanças podem otimizar recursos, melhorar a eficiência e evitar desperdício de água, além de garantir que o solo mantenha a umidade adequada para cada situação.  
+O exercício evidencia a importância de prototipagem e experimentação em sistemas automatizados, reforçando o aprendizado prático e o entendimento de como sensores, atuadores e lógica de programação trabalham juntos para resolver problemas reais.
 
