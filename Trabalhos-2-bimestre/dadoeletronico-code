@@ -1,0 +1,109 @@
+// LEDs do dado
+const int ledSupEsq = 11;
+const int ledSupDir = 9;
+
+const int ledMeioEsq = 10;
+const int ledCentro = 5;
+const int ledMeioDir = 6;
+
+const int ledInfEsq = 7;
+const int ledInfDir = 4;
+
+// Botão
+const int botao = 2;
+
+bool ultimoEstado = HIGH;
+
+void setup() {
+
+  pinMode(ledSupEsq, OUTPUT);
+  pinMode(ledSupDir, OUTPUT);
+  pinMode(ledMeioEsq, OUTPUT);
+  pinMode(ledCentro, OUTPUT);
+  pinMode(ledMeioDir, OUTPUT);
+  pinMode(ledInfEsq, OUTPUT);
+  pinMode(ledInfDir, OUTPUT);
+
+  pinMode(botao, INPUT_PULLUP);
+
+  apagarTudo();
+
+  randomSeed(analogRead(A0));
+}
+
+void loop() {
+
+  bool estadoAtual = digitalRead(botao);
+
+  // Detecta apenas o clique
+  if (ultimoEstado == HIGH && estadoAtual == LOW) {
+
+    int numero = random(1, 7);
+
+    mostrarNumero(numero);
+
+    delay(200);
+  }
+
+  ultimoEstado = estadoAtual;
+}
+
+void apagarTudo() {
+
+  digitalWrite(ledSupEsq, LOW);
+  digitalWrite(ledSupDir, LOW);
+
+  digitalWrite(ledMeioEsq, LOW);
+  digitalWrite(ledCentro, LOW);
+  digitalWrite(ledMeioDir, LOW);
+
+  digitalWrite(ledInfEsq, LOW);
+  digitalWrite(ledInfDir, LOW);
+}
+
+void mostrarNumero(int n) {
+
+  apagarTudo();
+
+  switch (n) {
+
+    case 1:
+      digitalWrite(ledCentro, HIGH);
+      break;
+
+    case 2:
+      digitalWrite(ledSupEsq, HIGH);
+      digitalWrite(ledInfDir, HIGH);
+      break;
+
+    case 3:
+      digitalWrite(ledSupEsq, HIGH);
+      digitalWrite(ledCentro, HIGH);
+      digitalWrite(ledInfDir, HIGH);
+      break;
+
+    case 4:
+      digitalWrite(ledSupEsq, HIGH);
+      digitalWrite(ledSupDir, HIGH);
+      digitalWrite(ledInfEsq, HIGH);
+      digitalWrite(ledInfDir, HIGH);
+      break;
+
+    case 5:
+      digitalWrite(ledSupEsq, HIGH);
+      digitalWrite(ledSupDir, HIGH);
+      digitalWrite(ledCentro, HIGH);
+      digitalWrite(ledInfEsq, HIGH);
+      digitalWrite(ledInfDir, HIGH);
+      break;
+
+    case 6:
+      digitalWrite(ledSupEsq, HIGH);
+      digitalWrite(ledSupDir, HIGH);
+      digitalWrite(ledMeioEsq, HIGH);
+      digitalWrite(ledMeioDir, HIGH);
+      digitalWrite(ledInfEsq, HIGH);
+      digitalWrite(ledInfDir, HIGH);
+      break;
+  }
+}
